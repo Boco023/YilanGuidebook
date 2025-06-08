@@ -2,13 +2,22 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>劇情遊戲 Demo</title>
+  <title>我的劇情遊戲</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <h1>我的劇情遊戲</h1>
-  <div id="game"></div>
+  <div id="game-container">
+  <img id="background" src="images/startpage.jpg" alt="背景圖">
+    <div id="character">
+      <img src="images/boco.png" alt="角色">
+    </div>
+    <div id="dialogue-box" onclick="nextDialogue()">
+      <div id="dialogue-text"></div>
+      <div id="next-tip">
+        （點擊這裡繼續）
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
